@@ -59,7 +59,8 @@ body {
     font-size: 30px;
     font-weight: 700;
     color: #000;
-    padding-top: 25px;
+    padding-top: 60px;
+    position: relative;
   }
   p {
     font-size: 16px;
@@ -69,7 +70,9 @@ body {
     padding-top: 50px;
   }
 }
+
 .white {
+  padding-bottom: 60px;
   h2 {
     font-size: 20px;
     font-weight: bold;
@@ -142,3 +145,95 @@ body {
     right: 35px;
   }
 }
+// costom-black start
+.costom-dark {
+  background: #131a1d;
+  // padding-bottom: 60px;
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: $yellow;
+    padding-top: 65px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 25px;
+    padding-top: 15px;
+  }
+}
+.costom-analyse,
+.costom-preparing,
+.costom-working,
+.costom-finalyse,
+.costom-testing,
+.costom-deliver {
+  position: relative;
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 140px;
+    &::before {
+      content: "";
+      position: absolute;
+      background: url(../images/sprite/sprite.svg#ico-avalyse) no-repeat;
+      width: 40px;
+      height: 40px;
+      top: 70px;
+      right: 90px;
+    }
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 25px;
+    padding-top: 15px;
+  }
+}
+.costom-preparing {
+  h2 {
+    &::before {
+      background: url(../images/svg/ico-preparing.svg) no-repeat;
+      width: 45px;
+    }
+  }
+}
+.costom-working {
+  h2 {
+    &::before {
+      background: url(../images/svg/ico-working.svg) no-repeat;
+      width: 45px;
+      height: 50px;
+    }
+  }
+}
+.costom-finalyse {
+  h2 {
+    &::before {
+      background: url(../images/svg/ico-finalyse.svg) no-repeat;
+      width: 45px;
+      height: 50px;
+    }
+  }
+}
+.costom-testing {
+  h2 {
+    &::before {
+      background: url(../images/svg/ico-testing.svg) no-repeat;
+      width: 45px;
+    }
+  }
+}
+.costom-deliver {
+  h2 {
+    &::before {
+      background: url(../images/svg/ico-deliver.svg) no-repeat;
+      width: 45px;
+    }
+  }
+}
+
+// costom-black end
